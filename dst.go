@@ -68,7 +68,7 @@ func (dst DST) Package(pkg string) (PKG, error) {
 		return val, nil
 	}
 
-	return make(PKG), errors.New("Package" + pkg + "not found!")
+	return make(PKG), errors.New("package not found")
 }
 
 // CVE returns a slice of package names which are affected by the given CVE.
